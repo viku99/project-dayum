@@ -1,0 +1,9 @@
+.motion-blur {
+    filter: url(#motion-blur-filter);
+  }
+  
+  @supports not (filter: url(#motion-blur-filter)) {
+    .motion-blur {
+      transition: transform 0.1s linear;
+    }
+  }
